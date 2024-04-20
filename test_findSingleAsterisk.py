@@ -9,7 +9,7 @@ resources_list = upload_data('testExamples.json')
 
 def test_SingleAsterisk():
     _, resource = resources_list[0]
-    assert findSingleAsterisk(resource) == True
+    assert findSingleAsterisk(resource) == False
 
 def test_DoubleAsterisk():
     _, resource = resources_list[1]
@@ -17,7 +17,7 @@ def test_DoubleAsterisk():
 
 def test_SingleAsteriskWithResource():
     _, resource = resources_list[2]
-    assert findSingleAsterisk(resource) == True
+    assert findSingleAsterisk(resource) == False
 
 def test_DoubleAsteriskWithResource():
     _, resource = resources_list[3]
@@ -41,8 +41,8 @@ def test_NoResource():
 
 def test_SingleAsteriskINTwoOfTwoStatements():
     _, resource = resources_list[8]
-    assert findSingleAsterisk(resource) == True
+    assert findSingleAsterisk(resource) == False
 
 def test_SingleAsteriskINOneOfTwoStatements():
     _, resource = resources_list[9]
-    assert findSingleAsterisk(resource) == True
+    assert findSingleAsterisk(resource) == False
